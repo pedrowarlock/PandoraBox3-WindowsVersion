@@ -1,5 +1,7 @@
 # FrontEnd_listbox
 
+![](https://www.paypal.com/pt_BR/i/scr/pixel.gif)
+
 ```html
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_donations" />
