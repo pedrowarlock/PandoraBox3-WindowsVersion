@@ -1,9 +1,9 @@
 # FrontEnd_listbox
 
-HOTKEY
- C     = Coin
- SPACE = Close game
- M     = Config Menu
+===== HOTKEY =======
+* C     = Coin
+* SPACE = Close game
+* M     = Config Menu
 
 ![alt text](https://imgur.com/ORNSypr.png)
 
