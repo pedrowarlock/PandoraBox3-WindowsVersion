@@ -1,0 +1,9 @@
+-LEITURA DE XML DO MAME PARA LER (VIDAS/DIFICULDADE)
+-FAZER UMA LIMPA NO CÓDIGO (MUITAS VARIAVEIS PERDIDAS)
+-SISTEMA DE FULLSCREEN (ARRUMAR)
+-SISTEMA DE INICIAR O EMULADOR
+-SISTEMA DE ENVIAR FICHA (Enviar ficha para o jogo, precisa identificar se o emulador iniciou)
+-REDESENHAR JANELA QUANDO O HOUVER MOVIMENTO NA JANELA (Não lembro se já fiz)
+-ARRUMAR UM VIDEO INTRO 
+-Sistema de dificuldades (Não encontrei um modo rápido de editar XML para editar as dificuldades do jogo)
+
