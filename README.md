@@ -1,6 +1,6 @@
 # FrontEnd_listbox
 
-![](https://www.paypal.com/pt_BR/i/scr/pixel.gif)
+![](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)
 
 ```html
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
