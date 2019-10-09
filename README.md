@@ -4,7 +4,7 @@
 
 + +Donate = +Project
 
-# ===== HOTKEY =======
+# ===== HOTKEYS =======
 * C     = Coin
 * SPACE = Close game
 * M     = Config Menu
