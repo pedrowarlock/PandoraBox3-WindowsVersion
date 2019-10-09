@@ -63,7 +63,7 @@ _WinAPI_ShowWindow ($pHande,@SW_HIDE)
 ;~ _WinAPI_Setparent($pHande, $iGui)
 _IrrHideMouse()
 
-Local $g_hAVI = GUICreate("MiniW",$Video_W,$Video_H,$Video_left,$Video_top,$WS_POPUP + $WS_POPUP ,-1,$pHande)
+Local $g_hAVI = GUICreate("MiniW",$Video_W,$Video_H,$Video_left,$Video_top,$WS_POPUP ,-1,$pHande)
 GUISetBkColor(0)
 
 ;_WinAPI_MoveWindow ($pHande, 0, 0, $WINDOWS_SIZE[0],$WINDOWS_SIZE[1], True)
