@@ -23,7 +23,7 @@ Const $WM_GRAPHNOTIFY = $WM_APP + 1
 ;                  $ExStyle             - [optional] an unknown value. Default is -1.
 ;                  $Run                 - [optional] an unknown value. Default is True.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -180,7 +180,7 @@ EndFunc
 ;                  $FileName            - an unknown value.
 ;                  $Run                 - [optional] an unknown value. Default is True.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -270,7 +270,7 @@ EndFunc
 ; Syntax ........: GUICtrlDeleteGraph(Byref $OutIGraphBuilder)
 ; Parameters ....: $OutIGraphBuilder    - [in/out] an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -316,7 +316,7 @@ EndFunc
 ;                  $FileName            - an unknown value.
 ;                  $Run                 - [optional] an unknown value. Default is True.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -379,7 +379,7 @@ EndFunc
 ; Syntax ........: CtrlDeleteAudio(Byref $OutIGraphBuilder)
 ; Parameters ....: $OutIGraphBuilder    - [in/out] an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -416,7 +416,7 @@ EndFunc
 ; Syntax ........: GetIVideoWindow($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -439,7 +439,7 @@ EndFunc
 ; Syntax ........: GetIMediaControl($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -462,7 +462,7 @@ EndFunc
 ; Syntax ........: GetIMediaSeeking($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -485,7 +485,7 @@ EndFunc
 ; Syntax ........: GetIMediaEventEx($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -511,7 +511,7 @@ EndFunc
 ;                  $wParam              - an unknown value.
 ;                  $lParam              - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -579,7 +579,7 @@ EndFunc
 ; Syntax ........: CREATEGRAPH_ON_EXIT()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -597,7 +597,7 @@ EndFunc
 ; Syntax ........: IMediaSeeking_SeekToCurrent($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -625,7 +625,7 @@ EndFunc
 ; Syntax ........: IMediaControl_Run($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -662,7 +662,7 @@ EndFunc
 ; Syntax ........: IMediaControl_Pause($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -688,7 +688,7 @@ EndFunc
 ; Syntax ........: IMediaControl_Stop($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -715,7 +715,7 @@ EndFunc
 ; Syntax ........: IMediaControl_StopWhenReady($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -742,7 +742,7 @@ EndFunc
 ; Syntax ........: IMediaControl_GetState($IGraphBuilder)
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -775,7 +775,7 @@ EndFunc
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ;                  $Gui                 - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -806,7 +806,7 @@ EndFunc
 ;                  $W                   - an unknown value.
 ;                  $H                   - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -834,7 +834,7 @@ EndFunc
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ;                  $WindowState         - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -866,7 +866,7 @@ EndFunc
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ;                  $FullScreenMode      - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -906,7 +906,7 @@ EndFunc
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ;                  $HideCursor          - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -940,7 +940,7 @@ EndFunc
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ;                  $Focus               - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -974,7 +974,7 @@ EndFunc
 ; Parameters ....: $IGraphBuilder       - an unknown value.
 ;                  $Color               - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1009,7 +1009,7 @@ EndFunc
 ; Parameters ....: $IGraphBuilderObj    - an unknown value.
 ;                  $Flag                - [optional] an unknown value. Default is 1.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1068,7 +1068,7 @@ EndFunc
 ; Syntax ........: IUnknownRelease($IUnknown)
 ; Parameters ....: $IUnknown            - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1090,7 +1090,7 @@ EndFunc
 ; Parameters ....: $StrIID              - an unknown value.
 ;                  $StrCLSID            - an unknown value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:

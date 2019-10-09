@@ -9,7 +9,7 @@
 ;                  $iBits               - an integer value.
 ;                  $iHz                 - an integer value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -44,7 +44,7 @@ EndFunc
 ;                  $i_BitsPP            - [optional] an integer value. Default is @DesktopDepth.
 ;                  $i_RefreshRate       - [optional] an integer value. Default is @DesktopRefresh.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:

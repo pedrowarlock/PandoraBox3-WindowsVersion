@@ -63,7 +63,7 @@ _WinAPI_ShowWindow ($pHande,@SW_HIDE)
 ;~ _WinAPI_Setparent($pHande, $iGui)
 _IrrHideMouse()
 
-Local $g_hAVI = GUICreate("MiniW",$Video_W,$Video_H,$Video_left,$Video_top,$WS_POPUP,-1,$pHande)
+Local $g_hAVI = GUICreate("MiniW",$Video_W,$Video_H,$Video_left,$Video_top,$WS_POPUP + $WS_POPUP ,-1,$pHande)
 GUISetBkColor(0)
 
 ;_WinAPI_MoveWindow ($pHande, 0, 0, $WINDOWS_SIZE[0],$WINDOWS_SIZE[1], True)
@@ -371,7 +371,7 @@ Exit
 ; Syntax ........: __KeyPressed($ikey)
 ; Parameters ....: $ikey                - an integer value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -682,7 +682,7 @@ EndFunc
 ; Syntax ........: _ACCEPT_KEY3([$back = True])
 ; Parameters ....: $back                - [optional] a boolean value. Default is True.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -704,7 +704,7 @@ EndFunc
 ; Syntax ........: _ACCEPT_KEY([$back = True])
 ; Parameters ....: $back                - [optional] a boolean value. Default is True.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1019,7 +1019,7 @@ EndFunc
 ; Syntax ........: _START_MENU($iMenu)
 ; Parameters ....: $iMenu               - an integer value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1162,7 +1162,7 @@ EndFunc
 ; Syntax ........: __Fichas_case()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1190,7 +1190,7 @@ EndFunc
 ; Syntax ........: __DrawMenuJoy()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1345,7 +1345,7 @@ EndFunc
 ; Syntax ........: _Menu_Configura()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1397,7 +1397,7 @@ EndFunc
 ; Parameters ....: $iNumber             - an integer value.
 ;                  $iConta              - an integer value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1415,7 +1415,7 @@ EndFunc
 ; Syntax ........: _joyConst()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1453,7 +1453,7 @@ EndFunc
 ; Syntax ........: _exit()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1478,7 +1478,7 @@ EndFunc ; _exit
 ; Syntax ........: _ExitGame()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1506,7 +1506,7 @@ EndFunc
 ; Syntax ........: _WinShow($i)
 ; Parameters ....: $i                   - an integer value.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1539,7 +1539,7 @@ EndFunc
 ;                  $iStyle              - [optional] an integer value. Default is 0x00000000.
 ;                  $iExStyle            - [optional] an integer value. Default is 0x00000000.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1572,7 +1572,7 @@ EndFunc
 ; Parameters ....: $iFile               - an integer value.
 ;                  $iImg                - [optional] an integer value. Default is True.
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1614,7 +1614,7 @@ EndFunc
 ; Syntax ........: __Constants()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1660,7 +1660,7 @@ EndFunc
 ; Syntax ........: _PASSWORD_DRAW_NUMB()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1683,7 +1683,7 @@ EndFunc
 ; Syntax ........: _salve_settings()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1732,7 +1732,7 @@ EndFunc
 ; Syntax ........: _SendCoin()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1764,7 +1764,7 @@ EndFunc
 ; Syntax ........: _FindGame()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
@@ -1791,7 +1791,7 @@ EndFunc
 ; Syntax ........: _playGame()
 ; Parameters ....:
 ; Return values .: None
-; Author ........: Your Name
+; Author ........: PedroWarlock
 ; Modified ......:
 ; Remarks .......:
 ; Related .......:
