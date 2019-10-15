@@ -28,21 +28,23 @@
 #include ".\include\DSEngine.au3"
 ;~ #include ".\include\DirectShow.au3"
 #include <GDIPlus.au3>
-    _GDIPlus_Startup()
-
-$enginer = Engine_Startup(@ScriptDir & "\bin\DSEngine.dll")
-
-$PLAYNG = False
-Global $TrocaSnap = True
-
 ;~ #NoTrayIcon
+
+_GDIPlus_Startup()
+
+Global Const $VIDEO_ENGINER	= Engine_Startup(@ScriptDir & "\bin\DSEngine.dll")
+if @error Then Exit MsgBox(16,"Erro",'"DSEnginer.dll" não encontradsa!')
+
+
+Global $PLAYNG 	  = False
+Global $TrocaSnap = True
+Global $IGraphBuilder
+Global $iHandle   = "PandoraBox3"
+
 ;----------------------------------------------
 ;GUI PRINCIPAL
 ;----------------------------------------------
-Global $IGraphBuilder
-Global $iHandle = "PandoraBox3"
 ;~ Global $iGui = GUICreate("",$WINDOWS_SIZE[0],$WINDOWS_SIZE[1],0,0,$WS_POPUP)
-
 Global $iGui = _IrrStartAdvanced ( _
     $IRR_EDT_OPENGL, _       ; Use OpenGL
     0, 0, _ ; screen size
@@ -78,15 +80,12 @@ GUISetBkColor(0)
 ProgressOn("Carregando lista de jogos...", "", "", -1, -1, $DLG_NOTONTOP)
 
 Global $WIN_STATUS = True
-;~ AdlibRegister ("__Constants")
-
-Local $BitmapFont = _IrrGetFont ( @ScriptDir & ".\images\"& $ResourceFile &"\trends.png" )
+Local $BitmapFont  = _IrrGetFont ( @ScriptDir & ".\images\"& $ResourceFile &"\trends.png" )
 _IrrGUISetFont( $BitmapFont )
 _IrrGUISetColor( $EGDC_BUTTON_TEXT, 223, 223, 0, 255 )
 
 ;Inicia joysticks
 _joyConst("Start",0,2)
-
 ;-------------------------------------
 Global $Label_Pulse 	= _IrrAddStaticText($CONF_COIN[$CoinsPulse] 	  ,$res_labels_pulse_topX,$res_labels_pulse_topY,$res_labels_pulse_buttonX,$res_labels_pulse_buttonY,$IRR_GUI_NO_BORDER,$IRR_GUI_NO_WRAP )
 Global $Label_Exit_mod	= _IrrAddStaticText($CONF_EXIT[$ExitMod] 		  ,$res_labels_Exit_mod_topX,$res_labels_Exit_mod_topY,$res_labels_Exit_mod_buttonX,$res_labels_Exit_mod_buttonY,$IRR_GUI_NO_BORDER,$IRR_GUI_NO_WRAP )
@@ -99,8 +98,6 @@ For $i=1 To 8
 _ArrayColInsert($ITENS_TOTAL,1)
 Next
 ;~ Global $ARRAY_LIST[1] = [0]
-
-
 
 $ITENS_TOTAL[0][3] =  UBound($ITENS_TOTAL)-1
 $ITENS_TOTAL[0][4] =  UBound($ITENS_TOTAL)-1
@@ -206,7 +203,7 @@ _DRAW_MENU($MENU_SELECIONADO)
 ;==================================================================================>
 	if $PlayngIntro Then
 
-		While Engine_GetLength($enginer) - Engine_GetPosition($enginer)
+		While Engine_GetLength($VIDEO_ENGINER) - Engine_GetPosition($VIDEO_ENGINER)
 			Sleep(1000)
 		WEnd
 	EndIf
@@ -1583,7 +1580,7 @@ EndFunc
 Func _PlaySnap()
 	if  Not $MENU_SELECIONADO = 1 and $TrocaSnap = False Then Return
 
-	if Engine_GetPosition($enginer) <> Engine_GetLength($enginer) and $TrocaSnap = False then Return
+	if Engine_GetPosition($VIDEO_ENGINER) <> Engine_GetLength($VIDEO_ENGINER) and $TrocaSnap = False then Return
 
 	Local $iSNAP_FORMAT[3]=[".avi",".mp4",".flv"]
 	Local $iFormatVideo
@@ -1600,11 +1597,11 @@ Func _PlaySnap()
 			;DirectShow (DsEnginer.dll)
 			if FileExists($iFile & $iFormatVideo) Then
 
-				$iVideo[$info_play] = Engine_LoadFile($enginer,$iFile & $iFormatVideo, $g_hAVI)
-				Engine_StartPlayback($enginer)
+				$iVideo[$info_play] = Engine_LoadFile($VIDEO_ENGINER,$iFile & $iFormatVideo, $g_hAVI)
+				Engine_StartPlayback($VIDEO_ENGINER)
 			Else
-				Engine_StopPlayback($Enginer)
-				Engine_Repaint($Enginer)
+				Engine_StopPlayback($VIDEO_ENGINER)
+				Engine_Repaint($VIDEO_ENGINER)
 			EndIf
 			$TrocaSnap = False
 EndFunc

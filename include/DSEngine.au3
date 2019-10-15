@@ -32,6 +32,7 @@ Global $DllEngine
 Func Engine_Startup($sPath = "DSEngine.dll")
 	$DllEngine = DllOpen($sPath)
 	Local $ret = DllCall($DllEngine, "ptr:cdecl", "StartupEngine")
+	if not IsArray($ret) or @error Then return SetError(-1)
 	Return $ret[0]
 EndFunc   ;==>Engine_Startup
 
