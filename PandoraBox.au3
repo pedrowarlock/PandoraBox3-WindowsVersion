@@ -30,7 +30,7 @@
 #include <GDIPlus.au3>
     _GDIPlus_Startup()
 
-$enginer = Engine_Startup(".\bin\DSEngine.dll")
+$enginer = Engine_Startup(@ScriptDir & "\bin\DSEngine.dll")
 
 $PLAYNG = False
 Global $TrocaSnap = True
