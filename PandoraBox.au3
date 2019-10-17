@@ -33,7 +33,7 @@
 _GDIPlus_Startup()
 
 Global Const $VIDEO_ENGINER	= Engine_Startup(@ScriptDir & "\bin\DSEngine.dll")
-if @error Then Exit MsgBox(16,"Erro",'"DSEnginer.dll" não encontradsa!')
+if @error Then Exit MsgBox(16,"Erro",$VIDEO_ENGINER)
 
 
 Global $PLAYNG 	  = False
@@ -1332,10 +1332,6 @@ Func __DrawMenuJoy()
 				$MENU_SELECIONADO = 2
 			EndIf
 EndFunc
-
-
-
-
 ; #FUNCTION# ====================================================================================================================
 ; Name ..........: _Menu_Configura
 ; Description ...:
