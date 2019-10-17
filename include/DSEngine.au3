@@ -30,7 +30,7 @@ Global $DllEngine
 
 ; Starts the engine.
 Func Engine_Startup($sPath = "DSEngine.dll")
-	if not FileExists($sPath) then  return SetError(-2,0,"DSEnginer.dll não foi encontrada na pasta selecionada")
+	if not FileExists($sPath) then  return SetError(-2,0,"DSEnginer.dll não foi encontrada na pasta selecionada " & $sPath)
 	$DllEngine = DllOpen($sPath)
 	Local $ret = DllCall($DllEngine, "ptr:cdecl", "StartupEngine")
 	if not IsArray($ret) or @error Then return SetError(-1,0,"DSEnginer.dll não pode ser iniciada")
